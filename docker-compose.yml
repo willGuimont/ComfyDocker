@@ -6,6 +6,7 @@ services:
     volumes:
       - ./output:/app/output
       - ./models:/app/models
+      - ./configs:/app/user/default
     network_mode: host
     deploy:
       resources:
