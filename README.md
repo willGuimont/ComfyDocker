@@ -29,8 +29,7 @@ wget https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-f
 ## Running
 
 ```shell
-docker-compose up --bui
-l
+docker-compose up --build
 ```
 
 `./output` is a volume mapped to `/app/output`, so the output will be saved there.
