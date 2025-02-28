@@ -19,7 +19,8 @@ cd ../unet
 # Normal models
 wget https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors
 # Might require to ask for access to FLUX.1-dev on Hugging Face
-wget --header="Authorization: Bearer <HF_TOKEN>" https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors
+export HF_TOKEN=$(cat ~/.huggingface/token)
+wget --header="Authorization: Bearer $HF_TOKEN" https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors
 # FP8 models
 wget https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors
 wget https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-fp8.safetensors
@@ -28,7 +29,8 @@ wget https://huggingface.co/Comfy-Org/flux1-schnell/resolve/main/flux1-schnell-f
 ## Running
 
 ```shell
-docker-compose up --build
+docker-compose up --bui
+l
 ```
 
 `./output` is a volume mapped to `/app/output`, so the output will be saved there.
