@@ -45,3 +45,6 @@ docker-compose up --build
 ### Installing plugins
 
 Additional plugins can be added to the `install_plugins.sh` script.
+
+## Fine-tuning
+https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_flux.md
